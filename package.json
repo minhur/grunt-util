@@ -1,7 +1,7 @@
 {
   "name": "grunt-util",
   "description": "Collection of grunt utility methods",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "author": {
     "name": "Min Hur",
     "email": "minhur@gmail.com"
