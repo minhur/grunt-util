@@ -1,7 +1,7 @@
 grunt-util
 ==========
 
-> Grunt utility methods including configuration organizer
+> Organize your grunt configs in separate files
 
 ## Getting Started
 This plugin requires Grunt `~0.4.0`. you may install this plugin with this command:
