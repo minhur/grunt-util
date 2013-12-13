@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 				pkg: grunt.file.readJSON('package.json')
 			};
 			grunt.util._.forEach(fs.readdirSync(path), function(file) {
-				grunt.util._.merge(config, require('./' + path + '/' + file)(grunt));
+				grunt.util._.merge(config, require('../../' + path + '/' + file)(grunt));
 			});
 			return config;
 		}
