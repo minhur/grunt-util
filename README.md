@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 			js: {
 				files: ['src/**/*.js'],
     			tasks: ['jshint:changed']
-	    	},
+	    	}
 	    }
 	}
 }
