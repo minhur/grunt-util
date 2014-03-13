@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 	});
 	grunt.util._.extend(grunt.file, {
 		changed: function(filepath) {
-			return fs.statSync(filepath).mtime.getTime() > Date.now() - 5000;	
+			return fs.statSync(filepath).mtime.getTime() > Date.now() - 10000;	
 		}
 	});
 	grunt.util._.each(pkg.dependencies, function(val, key) {
