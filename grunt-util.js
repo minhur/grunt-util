@@ -21,10 +21,14 @@ module.exports = function(grunt) {
 	});
 	grunt.util._.each(pkg.dependencies, function(val, key) {
 		if (key === 'grunt-util') return true;
+		if (key === 'grunt-template-jasmine-requirejs') return true;
 		if (key.substring( 0, 6 ) === 'grunt-') grunt.loadNpmTasks( key );
 	});
-	grunt.util._.each(pkg.devDependencies, function(val, key) {
-		if (key === 'grunt-util') return true;
-		if (key.substring( 0, 6 ) === 'grunt-') grunt.loadNpmTasks( key );
-	});
+	if (typeof grunt.option('production') === 'undefined') {
+		grunt.util._.each(pkg.devDependencies, function(val, key) {
+			if (key === 'grunt-util') return true;
+			if (key === 'grunt-template-jasmine-requirejs') return true;
+			if (key.substring( 0, 6 ) === 'grunt-') grunt.loadNpmTasks( key );
+		});
+	}
 }
