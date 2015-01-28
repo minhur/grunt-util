@@ -1,7 +1,7 @@
 {
   "name": "grunt-util",
   "description": "Organize your grunt configs in separate files",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "author": {
     "name": "Min Hur",
     "email": "minhur@gmail.com"
